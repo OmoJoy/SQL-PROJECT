@@ -5,10 +5,30 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
+select city, sum(totaltransactionrevenue) AS total_revenue
+from all_sessions
+group by city
+order by total_revenue DESC
+limit 1
+
+select country, sum(totaltransactionrevenue) AS total_revenue
+from all_sessions
+group by country
+order by total_revenue DESC
+limit 1
 
 
 
 Answer:
+
+"city"
+"Norfolk"
+
+"country"
+"Bangladesh"
+"total_revenue"
+
+
 
 
 
